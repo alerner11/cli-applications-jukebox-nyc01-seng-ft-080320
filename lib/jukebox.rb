@@ -10,6 +10,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.strip
   if songs.index(selection)
+    puts "Playing {selection}"
+  end
 end
 
 def list(songs)
