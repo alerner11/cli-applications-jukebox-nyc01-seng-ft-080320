@@ -29,6 +29,9 @@ def exit_jukebox
 end
 
 def run
+  puts "Please enter a command:"
+  command = gets.strip
+  case
 end
 
 songs = [
