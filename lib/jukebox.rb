@@ -31,18 +31,19 @@ end
 def run
   puts "Please enter a command:"
   command = gets.strip
-  case command
-  when "list"
-    list(songs)
-  when "play"
-    play(songs)
-  when "help"
-    help
-  when "exit"
-    exit_jukebox
-    break
+  while true
+    case command
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+      break
+    end
   end
-  
 end
 
 songs = [
