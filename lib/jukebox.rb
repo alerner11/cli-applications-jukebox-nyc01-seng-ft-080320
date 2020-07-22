@@ -12,7 +12,7 @@ def play(songs)
   if songs.index(selection)
     puts "Playing #{selection}"
   elsif selection.to_i > 0 && selection.to_i < 10
-    puts "Playing #{songs[selection - 1]}"
+    puts "Playing #{songs[selection.to_i - 1]}"
   else
     puts "Invalid input, please try again"
   end
