@@ -20,8 +20,7 @@ end
 
 def list(songs)
   songs.each_index do |index|
-    listnum = index + 1
-    puts "#{listnum}. #{songs[index]}"
+    puts "#{index + 1}. #{songs[index]}"
   end
 end
 
