@@ -9,7 +9,12 @@ end
 def play
 end
 
-def list
+def list(songs)
+  index = 0
+  songs.each do |song|
+    puts "#{index + 1}. #{song}"
+    index += 1
+  end
 end
 
 def exit_jukebox
