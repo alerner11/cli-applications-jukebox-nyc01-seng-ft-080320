@@ -9,11 +9,10 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.strip
-  if selection.is_a?(String)
-    if songs.index(selection)
-      puts "Playing {selection}"
-    end
-  end
+  if songs.index(selection)
+    puts "Playing #{selection}"
+  elsif selection.to_i > 0 && selection.to_i < 10
+    puts "Playing #{songs[selection - 1]}"
 end
 
 def list(songs)
