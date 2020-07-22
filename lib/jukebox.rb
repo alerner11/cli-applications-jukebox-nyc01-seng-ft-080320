@@ -40,6 +40,7 @@ def run
     help
   when "exit"
     exit
+    break
   end
   
 end
