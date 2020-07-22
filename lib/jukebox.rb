@@ -10,10 +10,8 @@ def play
 end
 
 def list(songs)
-  index = 0
-  songs.each do |song|
-    puts "#{index + 1}. #{song}"
-    index += 1
+  songs.each_with_index do |index|
+    puts "#{index + 1}. #{songs[index]}"
   end
 end
 
