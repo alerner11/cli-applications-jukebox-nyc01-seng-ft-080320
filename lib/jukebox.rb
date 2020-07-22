@@ -39,7 +39,7 @@ def run
   when "help"
     help
   when "exit"
-    exit
+    exit_jukebox
     break
   end
   
